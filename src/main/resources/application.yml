@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    druid:
+      db1:
+        driverClassName: com.mysql.jdbc.Driver
+        username: cams_settle
+        password: PIZt15x1S4
+        # spring2.0此处为jdbc-url
+        url: jdbc:mysql://rm-bp1dgp08njl84sbdrqo.mysql.rds.aliyuncs.com:3306/cams_settlement?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&autoReconnect=true
+      db2:
+        driverClassName: com.mysql.jdbc.Driver
+        username: cams_charging
+        password: 2Laq2gNqwd
+        # spring2.0此处为jdbc-url
+        url: jdbc:mysql://rm-bp1dgp08njl84sbdrqo.mysql.rds.aliyuncs.com:3306/cams_charging?useUnicode=true&characterEncoding=UTF-8
+mybatis:
+  mapper-locations: classpath:/com/example/nettyStudy/dao/*Mapper.xml
